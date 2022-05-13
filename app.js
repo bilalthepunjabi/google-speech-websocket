@@ -8,7 +8,7 @@ io.on('connection', function (socket) {
 
 // Instantiates a client
    const speech = Speech({
-        keyFilename: './' // file json key
+        keyFilename: process.env.SERVICE_JSON_KEY // file json key
    });
     const encoding = 'LINEAR16';
     const sampleRateHertz = 16000;
